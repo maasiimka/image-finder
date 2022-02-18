@@ -1,0 +1,30 @@
+{
+  "name": "image-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://maasiimka.github.io/image-finder",
+  "scripts": {
+    "start": "parcel src/index.html --open --port 3000",
+    "build": "parcel build src/index.html --no-minify --public-url /image-finder/",
+    "deploy": "gh-pages -d dist",
+    "predeploy":"npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maasiimka/image-finder.git"
+  },
+  "keywords": [],
+  "author": "Max Rozzhalovets <mrozisalovec@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
+  },
+  "dependencies": {
+    "basiclightbox": "^5.0.4",
+    "lodash": "^4.17.21",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  }
+}
